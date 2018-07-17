@@ -1,0 +1,29 @@
+extends layout
+
+append styles
+  link(
+    rel="stylesheet",
+    href="https://use.fontawesome.com/releases/v5.1.0/css/all.css",
+    integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt",
+    crossorigin="anonymous"
+  )
+
+block content
+  div(id="sketch-holder")
+    div(class="container-fluid")
+      div(class="card")
+        img(
+          src="/images/face.jpg",
+          alt="my face",
+          style="width:100%"
+        )
+        h1 Hi, I'm #{ profile.name }
+        p(class="title") #{ profile.position + ' at ' + profile.company }
+        div(style="margin: 24px 0;")
+          a(href="#"): i(class="fab fa-linkedin")
+          a(href="#"): i(class="fab fa-github-square")
+          a(href="#"): i(class="fab fa-medium")
+        p: button Contact
+
+append scripts
+  script(src="/javascripts/network-viz.bundle.js")
