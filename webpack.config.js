@@ -11,9 +11,9 @@ const excludeList = [
 module.exports = {
 	mode: 'production',
 	target: 'node',
-	entry: './app.js',
+	entry: './src/public/index.js',
 	output: {
-		path: path.resolve(__dirname, 'public', 'javascripts'),
+		path: path.resolve(__dirname, 'dist'),
 		filename: 'app.bundle.js'
 	},
 	module: {

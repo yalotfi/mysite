@@ -3,7 +3,7 @@ var router = express.Router();
 
 profile = {
   name: 'Yaseen',
-  position: 'Data Scientist',
+  position: 'Applied ML',
   company: 'EY'
 }
 

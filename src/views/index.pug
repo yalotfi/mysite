@@ -19,11 +19,8 @@ block content
         )
         h1 Hi, I'm #{ profile.name }
         p(class="title") #{ profile.position + ' at ' + profile.company }
-        div(style="margin: 24px 0;")
-          a(href="#"): i(class="fab fa-linkedin")
-          a(href="#"): i(class="fab fa-github-square")
-          a(href="#"): i(class="fab fa-medium")
+        div
+          a(href="https://www.linkedin.com/in/yaseenlotfi"): i(class="fab fa-linkedin")
+          a(href="https://github.com/yalotfi"): i(class="fab fa-github-square")
+          a(href="/images/resume.pdf"): i(class="fas fa-file-alt")
         p: button Contact
-
-append scripts
-  script(src="/javascripts/network-viz.bundle.js")
